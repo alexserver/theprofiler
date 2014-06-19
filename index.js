@@ -13,7 +13,8 @@ A simple module for tracking execution time.
 To keep track of some tasks:
 
 ```
-var profiler = require("theprofiler");
+var Profiler = require("theprofiler"),
+    profiler = new Profiler();
 //start timing:
 profiler.start("starting");
 //calling functions and saving laps

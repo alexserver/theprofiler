@@ -1,6 +1,6 @@
 {
   "name": "theprofiler",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A simple task profiler for your coding.",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,6 @@
     "chai": "^1.9.1"
   },
   "scripts": {
-    "test": "mocha ./tests --recursive -c --reporter nyan"
+    "test": "mocha ./tests --recursive -c --reporter list"
   }
 }
