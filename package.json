@@ -1,0 +1,29 @@
+{
+  "name": "theprofiler",
+  "version": "0.0.0",
+  "description": "A simple task profiler for your coding.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alexserver/theprofiler.git"
+  },
+  "keywords": [
+    "profile",
+    "performance"
+  ],
+  "author": "Alejandro Gomez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexserver/theprofiler/issues"
+  },
+  "homepage": "https://github.com/alexserver/theprofiler",
+  "devDependencies": {
+    "chai": "^1.9.1"
+  },
+  "scripts": {
+    "test": "mocha ./tests --recursive -c --reporter nyan"
+  }
+}
