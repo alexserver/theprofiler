@@ -34,6 +34,7 @@ next step, make it works with promises.
 */
 
 var util = require("util");
+var when = require("when");
 
 var profiler = function(options){
   "use strict";
@@ -114,6 +115,12 @@ profiler.prototype.getTimingAsString = function(){
 };
 profiler.prototype.print = function(){
   console.log(this.getTimingAsString());
+};
+
+profiler.prototype.track = function(promise, task, category){
+  promise.done(function(){
+    profiler.end(task, category);
+  });
 };
 
 module.exports = profiler;
